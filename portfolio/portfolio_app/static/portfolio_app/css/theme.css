@@ -1,0 +1,101 @@
+/* portfolio_app/static/portfolio_app/css/theme.css */
+
+/* Subtle DBZ-Inspired Color Scheme */
+body {
+    background-image: radial-gradient(circle at top left, #2c3e50, #1c1c1c);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #f5f5f5; /* Light text */
+}
+
+header, footer {
+    background-color: rgba(44, 62, 80, 0.9); /* Deep blue with transparency */
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto Slab', serif; /* Bold, impactful font */
+}
+
+/* Animations */
+header h1 {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        color: #f39c12; /* Orange */
+    }
+    50% {
+        color: #e67e22; /* Darker Orange */
+    }
+    100% {
+        color: #f39c12;
+    }
+}
+
+.project-item {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(243, 156, 18, 0.5);
+}
+
+/* Subtle DBZ-Inspired Icons */
+nav ul li a::after {
+    content: '⚡'; /* Lightning bolt, DBZ energy symbol */
+    opacity: 0;
+    transition: opacity 0.3s;
+    margin-left: 5px;
+}
+
+nav ul li a:hover::after {
+    opacity: 1;
+}
+
+/* Advanced UI Elements */
+.skills-list li {
+    position: relative;
+    padding-left: 25px;
+}
+
+.skills-list li::before {
+    content: '🔥'; /* Flame symbol, DBZ energy */
+    position: absolute;
+    left: 0;
+    color: #e74c3c; /* Red color */
+    font-size: 1.2em;
+}
+
+/* Additional Animations */
+.certification-item {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Interactive Social Links */
+nav ul li a {
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+nav ul li a::after {
+    content: '⚡'; /* Lightning bolt symbol */
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #f39c12;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}

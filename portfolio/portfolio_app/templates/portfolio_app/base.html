@@ -1,0 +1,40 @@
+<!-- portfolio_app/templates/portfolio_app/base.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ about_me.title }}</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="{% static 'portfolio_app/css/styles.css' %}">
+    <!-- Theme Styles -->
+    <link rel="stylesheet" href="{% static 'portfolio_app/css/theme.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Mahmoud M. Abdelrahman</h1>
+        <nav>
+            <ul>
+                {% for link in social_links %}
+                    <li><a href="{{ link.url }}" target="_blank">{{ link.name }}</a></li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    
+    <footer>
+        <p>&copy; {{ now|date:"Y" }} Mahmoud M. Abdelrahman</p>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="{% static 'portfolio_app/js/scripts.js' %}"></script>
+</body>
+</html>

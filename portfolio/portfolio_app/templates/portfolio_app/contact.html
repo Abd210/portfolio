@@ -1,0 +1,19 @@
+<!-- portfolio_app/templates/portfolio_app/contact.html -->
+{% extends 'portfolio_app/base.html' %}
+{% load static %}
+
+{% block content %}
+<section id="contact-form">
+    <h2>Contact Me</h2>
+    {% if messages %}
+        {% for message in messages %}
+            <p class="message {{ message.tags }}">{{ message }}</p>
+        {% endfor %}
+    {% endif %}
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Send</button>
+    </form>
+</section>
+{% endblock %}

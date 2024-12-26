@@ -1,0 +1,86 @@
+<!-- portfolio_app/templates/portfolio_app/home.html -->
+{% extends 'portfolio_app/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>{{ about_me.content }}</p>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    {% for edu in educations %}
+        <div class="education-item">
+            <h3>{{ edu.degree }} at {{ edu.institution }}</h3>
+            <p>{{ edu.location }} | Expected Graduation: {{ edu.expected_graduation|date:"F Y" }}</p>
+            <p><strong>Relevant Subjects:</strong> {{ edu.relevant_subjects }}</p>
+        </div>
+    {% endfor %}
+</section>
+
+<section id="experience">
+    <h2>Experience</h2>
+    {% for exp in experiences %}
+        <div class="experience-item">
+            <h3>{{ exp.position }} at {{ exp.company }}</h3>
+            <p>{{ exp.location }} | {{ exp.start_date|date:"F Y" }} - {{ exp.end_date|default:"Present" }}</p>
+            <p>{{ exp.description }}</p>
+        </div>
+    {% endfor %}
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+        {% for project in projects %}
+            <div class="project-item">
+                {% if project.image %}
+                    <img src="{{ project.image.url }}" alt="{{ project.title }}">
+                {% endif %}
+                <h3>{{ project.title }}</h3>
+                <p>{{ project.description }}</p>
+                <p><strong>Technologies:</strong> {{ project.technologies }}</p>
+                {% if project.link %}
+                    <a href="{{ project.link }}" target="_blank">View Project</a>
+                {% else %}
+                    <a href="#" class="add-link" data-project-id="{{ project.id }}">Add Link</a>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+</section>
+
+<section id="certifications">
+    <h2>Certifications</h2>
+    {% for cert in certifications %}
+        <div class="certification-item">
+            <h3>{{ cert.title }}</h3>
+            <p>{{ cert.issuer }} | {{ cert.issue_date|date:"F Y" }}</p>
+            {% if cert.credential_url %}
+                <a href="{{ cert.credential_url }}" target="_blank">View Certificate</a>
+            {% endif %}
+        </div>
+    {% endfor %}
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+        {% for skill in skills %}
+            <li>{{ skill.name }} - {{ skill.proficiency }}%</li>
+        {% endfor %}
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:{{ contact_info.email }}">{{ contact_info.email }}</a></p>
+    <p>Phone: {{ contact_info.phone }}</p>
+    <p>Address: {{ contact_info.address }}</p>
+    <p>GitHub: <a href="https://github.com/Abd210" target="_blank">Abd210</a></p>
+    <a href="{% url 'contact' %}">Send me an email</a>
+</section>
+
+{% endblock %}

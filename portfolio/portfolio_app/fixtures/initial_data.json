@@ -1,0 +1,269 @@
+[
+    {
+        "model": "portfolio_app.sociallink",
+        "pk": 1,
+        "fields": {
+            "name": "LinkedIn",
+            "url": "https://www.linkedin.com/in/abdalrahman-mahmoud/"
+        }
+    },
+    {
+        "model": "portfolio_app.sociallink",
+        "pk": 2,
+        "fields": {
+            "name": "GitHub",
+            "url": "https://github.com/Abd210"
+        }
+    },
+    {
+        "model": "portfolio_app.aboutme",
+        "pk": 1,
+        "fields": {
+            "title": "About Me",
+            "content": "Mahmoud M. Abdelrahman is a passionate software developer based in Bucharest, Romania. With experience in full-stack development, Mahmoud specializes in building scalable and efficient web applications using technologies like Django, Angular.js, and MongoDB. Committed to continuous learning and innovation, Mahmoud thrives in collaborative environments and enjoys tackling complex challenges."
+        }
+    },
+    {
+        "model": "portfolio_app.education",
+        "pk": 1,
+        "fields": {
+            "institution": "POLYTECHNIC UNIVERSITY OF BUCHAREST",
+            "location": "Bucharest, Romania",
+            "degree": "Faculty of Engineering in Foreign Languages",
+            "field_of_study": "Engineering and Languages",
+            "expected_graduation": "2026-05-01",
+            "relevant_subjects": "OOP, DSA, Web Programming, OS, Databases, Microprocessor Architecture (Rust), Mobile App Development (Kotlin), IoT (Flutter), Computer Graphics (OpenGL), Algorithm Design, Computer Networks"
+        }
+    },
+    {
+        "model": "portfolio_app.experience",
+        "pk": 1,
+        "fields": {
+            "company": "Google Developer Group (GDG) UNSTPB",
+            "position": "Web Lead",
+            "location": "Bucharest, Romania",
+            "start_date": "2024-09-01",
+            "end_date": null,
+            "description": "Lead web development projects and organized events to promote learning and collaboration within the campus GDG community. Coordinated team activities to foster a culture of continuous learning and innovation in web development technologies."
+        }
+    },
+    {
+        "model": "portfolio_app.experience",
+        "pk": 2,
+        "fields": {
+            "company": "Lenovo Summer School",
+            "position": "Full Stack Developer",
+            "location": "Bucharest, Romania",
+            "start_date": "2024-07-01",
+            "end_date": "2024-07-31",
+            "description": "Learned the basics of Full Stack development using Angular and Express. Gained experience in uploading and deploying websites, understanding end-to-end web development processes."
+        }
+    },
+    {
+        "model": "portfolio_app.project",
+        "pk": 1,
+        "fields": {
+            "title": "School Management Platform",
+            "location": "Bucharest, Romania",
+            "description": "A comprehensive platform aimed at simplifying school operations and enhancing user experience. Designed an intuitive UI/UX in Figma and developed the application in Flutter for seamless performance and responsiveness. Developed features for managing student records, attendance tracking, and communication within an integrated web and mobile platform to streamline administration.",
+            "link": null,
+            "image": "projects/school_management.png",
+            "technologies": "Figma, Flutter"
+        }
+    },
+    {
+        "model": "portfolio_app.project",
+        "pk": 2,
+        "fields": {
+            "title": "Finance App",
+            "location": "Bucharest, Romania",
+            "description": "A personal finance management tool designed to track expenses and visualize financial data. Implemented a responsive and intuitive UI/UX using Figma, Angular, and Express.js to create a scalable architecture for tracking financial data. Integrated MongoDB for secure data storage and implemented user authentication and role-based access control to ensure privacy.",
+            "link": null,
+            "image": "projects/finance_app.png",
+            "technologies": "Angular, Express.js, MongoDB, Figma"
+        }
+    },
+    {
+        "model": "portfolio_app.project",
+        "pk": 3,
+        "fields": {
+            "title": "Auto Car Marketplace",
+            "location": "Bucharest, Romania",
+            "description": "A marketplace for buying and selling cars with secure transactions and advanced search capabilities. Developed a fully responsive interface using HTML, CSS, and JavaScript, optimized for both mobile and desktop users. Created a secure, scalable backend with Django and integrated MongoDB for efficient data handling and advanced search functionality.",
+            "link": null,
+            "image": "projects/auto_car_marketplace.png",
+            "technologies": "HTML, CSS, JavaScript, Django, MongoDB"
+        }
+    },
+    {
+        "model": "portfolio_app.project",
+        "pk": 4,
+        "fields": {
+            "title": "Messaging App",
+            "location": "Bucharest, Romania",
+            "description": "A real-time messaging application designed for seamless communication and media sharing. Created an engaging UI/UX using Figma and implemented the frontend with HTML, CSS, JavaScript, and Bootstrap for an interactive user experience. Utilized MySQL for secure data management and integrated features like group messaging and real-time notifications for enhanced connectivity.",
+            "link": null,
+            "image": "projects/messaging_app.png",
+            "technologies": "HTML, CSS, JavaScript, Bootstrap, PHP, MySQL"
+        }
+    },
+    {
+        "model": "portfolio_app.certification",
+        "pk": 1,
+        "fields": {
+            "title": "Python & Django | The Complete Django Web Development Course",
+            "issuer": "Udemy",
+            "issue_date": "2023-05-15",
+            "credential_id": null,
+            "credential_url": null
+        }
+    },
+    {
+        "model": "portfolio_app.certification",
+        "pk": 2,
+        "fields": {
+            "title": "The Complete Java Development Bootcamp",
+            "issuer": "Udemy",
+            "issue_date": "2022-12-15",
+            "credential_id": null,
+            "credential_url": null
+        }
+    },
+    {
+        "model": "portfolio_app.skill",
+        "pk": 1,
+        "fields": {
+            "name": "Java",
+            "proficiency": 80
+        }
+    },
+    {
+        "model": "portfolio_app.skill",
+        "pk": 2,
+        "fields": {
+            "name": "JavaScript",
+            "proficiency": 75
+        }
+    },
+    {
+        "model": "portfolio_app.skill",
+        "pk": 3,
+        "fields": {
+            "name": "HTML",
+            "proficiency": 85
+        }
+    },
+    {
+        "model": "portfolio_app.skill",
+        "pk": 4,
+        "fields": {
+            "name": "CSS",
+            "proficiency": 85
+        }
+    },
+    {
+        "model": "portfolio_app.skill",
+        "pk": 5,
+        "fields": {
+            "name": "Bootstrap",
+            "proficiency": 80
+        }
+    },
+    {
+        "model": "portfolio_app.skill",
+        "pk": 6,
+        "fields": {
+            "name": "jQuery",
+            "proficiency": 70
+        }
+    },
+    {
+        "model": "portfolio_app.skill",
+        "pk": 7,
+        "fields": {
+            "name": "Angular.js",
+            "proficiency": 70
+        }
+    },
+    {
+        "model": "portfolio_app.skill",
+        "pk": 8,
+        "fields": {
+            "name": "Node.js",
+            "proficiency": 70
+        }
+    },
+    {
+        "model": "portfolio_app.skill",
+        "pk": 9,
+        "fields": {
+            "name": "Express.js",
+            "proficiency": 70
+        }
+    },
+    {
+        "model": "portfolio_app.skill",
+        "pk": 10,
+        "fields": {
+            "name": "Django",
+            "proficiency": 75
+        }
+    },
+    {
+        "model": "portfolio_app.skill",
+        "pk": 11,
+        "fields": {
+            "name": "Flutter",
+            "proficiency": 70
+        }
+    },
+    {
+        "model": "portfolio_app.skill",
+        "pk": 12,
+        "fields": {
+            "name": "MySQL",
+            "proficiency": 80
+        }
+    },
+    {
+        "model": "portfolio_app.skill",
+        "pk": 13,
+        "fields": {
+            "name": "MongoDB",
+            "proficiency": 75
+        }
+    },
+    {
+        "model": "portfolio_app.skill",
+        "pk": 14,
+        "fields": {
+            "name": "Romanian",
+            "proficiency": 100
+        }
+    },
+    {
+        "model": "portfolio_app.skill",
+        "pk": 15,
+        "fields": {
+            "name": "English",
+            "proficiency": 100
+        }
+    },
+    {
+        "model": "portfolio_app.skill",
+        "pk": 16,
+        "fields": {
+            "name": "Arabic",
+            "proficiency": 100
+        }
+    },
+    {
+        "model": "portfolio_app.contactinfo",
+        "pk": 1,
+        "fields": {
+            "email": "abdalrahman.mirghani@gmail.com",
+            "phone": "+40770262408",
+            "address": "Bucharest, Romania"
+        }
+    }
+]
